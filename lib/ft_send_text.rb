@@ -2,7 +2,7 @@ class FtSendText
 
   attr_reader :font_path, :host, :text, :once, :speed, :color
 
-  BASE_PATH="~/src/protonight/flaschen-taschen/client"
+  BASE_PATH="~/Users/sophiakc/code/sophiakc/noisebridge/flaschen-taschen/client"
 
   def initialize(
     font_path:"#{BASE_PATH}/fonts/10x20.bdf",
