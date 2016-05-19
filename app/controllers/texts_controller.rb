@@ -1,4 +1,5 @@
 require "ft_send_text"
+require 'pry'
 
 class TextsController < ApplicationController
   def create
