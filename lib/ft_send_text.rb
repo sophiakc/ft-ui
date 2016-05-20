@@ -1,3 +1,5 @@
+require 'pry'
+
 class FtSendText
 
   attr_reader :font_path, :host, :text, :once, :speed, :color
@@ -5,33 +7,29 @@ class FtSendText
   BASE_PATH="/Users/sophiakc/code/sophiakc/noisebridge/flaschen-taschen/client"
 
   def initialize(
-    font_path:"#{BASE_PATH}/fonts/10x20.bdf",
-    host:"localhost",
-    text:"hello world",
-    once: true,
-    speed: 60,
-    color: "#FFFFFF"
+    font_path:  "#{BASE_PATH}/fonts/5x5.bdf",
+    # layer:      15,
+    host:       "localhost",
+    text:       "hello world",
+    once:       true,
+    speed:      60,
+    color:      "#cff0000"
   )
-    @font_path = font_path
-    @host = host
-    @text = text
-    @once = once_option
-    @speed = speed
-    @color = color
+    @font_path  = font_path
+    # @layer      = layer
+    @host       = host
+    @text       = text
+    @once       = once_option
+    @speed      = speed
+    @color      = color
   end
-
-binding.pry
 
   def send
-    `#{BASE_PATH}/send-text -f #{font_path} -h #{host} -s #{speed} #{once_option} -c #{color} #{text}`
+    "#{BASE_PATH}/send-text -f #{@font_path} -c#{@color} -h #{@host} -s #{@speed} #{@once} #{@text}"
   end
-
-# binding.pry
 
   def once_option
     "-o" if once
   end
-
-# binding.pry
 
 end

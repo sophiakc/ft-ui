@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   # get 'texts/index'
   get 'index' => "texts#index"
-  post 'index' => "texts#index"
+  post 'index' => "texts#create"
 
   resources :texts
   # The priority is based upon order of creation: first created -> highest priority.

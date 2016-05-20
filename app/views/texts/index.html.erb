@@ -1,24 +1,26 @@
 hello
 
 <%=form_tag do -%>
-<%= text_field_tag :text %>
-<div>
-<input id="speed" type="range" name="speed" value="60" min="1" max="100" />
-<div id="speedFeedback"></div>
-</div>
-<script src="jscolor.js"></script>
+	<%= text_field_tag :text %>
+	<div>
+		<input id="speed" type="range" name="speed" value="60" min="1" max="100" />
+		<div id="speedFeedback"></div>
+	</div>
 
-Color: <input class="jscolor" value="ab2567" name="color">
-<div>
-<%= submit_tag "Go" %>
-</div>
+	<% javascript_include_tag "jscolor.js" => true %>
+	<!-- <script src="jscolor.js"></script> -->
+	Color: <input class="jscolor" value="ab2567" name="color">
+	
+	<div>
+		<%= submit_tag "Go" %> 
+	</div>
 <% end -%>
 
 <script type="text/javascript">
-var slider = document.getElementById("speed");
-var feedback = document.getElementById("speedFeedback");
-feedback.textContent = slider.value;
-slider.addEventListener("input", function() {
-  feedback.textContent = slider.value;
-});
+	var slider = document.getElementById("speed");
+	var feedback = document.getElementById("speedFeedback");
+	feedback.textContent = slider.value;
+	slider.addEventListener("input", function() {
+	  feedback.textContent = slider.value;
+	});
 </script>
