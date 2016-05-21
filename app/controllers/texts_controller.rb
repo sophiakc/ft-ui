@@ -2,6 +2,7 @@ require "ft_send_text"
 require 'pry'
 
 class TextsController < ApplicationController
+  # this method create a new display 
   def create
     sender = FtSendText.new(text: params[:text], speed: params[:speed], color: params[:color])
     # sender.send

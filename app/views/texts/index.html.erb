@@ -1,4 +1,5 @@
-<h1>Flaschen Taschen typewriter! Say something:</h1>
+<h1>I am Flaschen Taschen typewriter</h1>
+<h2>Say something:</h2>
 
 <%=form_tag do -%>
 	<%= text_field_tag :text %>
@@ -9,10 +10,11 @@
 
 	<% javascript_include_tag "jscolor.js" => true %>
 	<!-- <script src="jscolor.js"></script> -->
-	Color: <input class="jscolor" value="ed1c24" name="color">
+	Color: <input class="jscolor" value="f41325" name="color">
 	
+	<!-- a POST request is sent from the browser to the server via the routes and is calling the create method of TextsController-->
 	<div>
-		<%= submit_tag "Go" %> 
+		<%= submit_tag "Send to Flaschen Taschen" %> 
 	</div>
 <% end -%>
 
