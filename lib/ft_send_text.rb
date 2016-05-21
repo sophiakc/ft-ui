@@ -7,10 +7,11 @@ class FtSendText
   BASE_PATH="/Users/sophiakc/code/sophiakc/noisebridge/flaschen-taschen/client"
 
   def initialize(
-    font_path:  "#{BASE_PATH}/fonts/5x5.bdf",
+    font_path:  "#{BASE_PATH}/fonts/9x18B.bdf",
     # layer:      "13",
     # host:       "10.20.0.40", #for FTscreen
-    host:       "localhost",
+    # host:       "localhost",
+    host:       "flaschen-taschen.local",
     text:       "hello world",
     once:       true,
     speed:      60,
