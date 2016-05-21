@@ -1,5 +1,9 @@
 == FLASCHEN TASCHEN TYPEWRITER
 
+Check related Github repositories:
+https://github.com/hzeller/flaschen-taschen
+https://github.com/cgorringe/ft-demos
+
 Flaschen Taschen is an installation made out of beer bottles with LED inside each of them, all controlled by a Raspberry Pi. FT has been built for the love of building by Noisebridge hackers. This is being presented at MakerFaire 2016, San Francisco Bay Area.
 
 This is the Ruby app for Maker Faire visitors to be able to interact with Flaschen Taschen and send text to the giant screen. 
