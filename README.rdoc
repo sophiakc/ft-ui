@@ -1,28 +1,18 @@
-== README
+== FLASCHEN TASCHEN TYPEWRITER
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Flaschen Taschen is an installation made out of beer bottles with LED inside each of them, all controlled by a Raspberry Pi. FT has been built for the love of building by Noisebridge hackers. This is being presented at MakerFaire 2016, San Francisco Bay Area.
 
-Things you may want to cover:
+This is the Ruby app for Maker Faire visitors to be able to interact with Flaschen Taschen and send text to the giant screen. 
 
-* Ruby version
+Version of May 21st 2016, you can:
 
-* System dependencies
+* write text
 
-* Configuration
+* Pick a color
 
-* Database creation
+* Choose the speed of text display
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Further features soon to come ;)
 
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+Side note: Also a great excuse to practice and continue learning Ruby :P
