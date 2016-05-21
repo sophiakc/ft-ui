@@ -8,7 +8,8 @@ class FtSendText
 
   def initialize(
     font_path:  "#{BASE_PATH}/fonts/5x5.bdf",
-    # layer:      15,
+    # layer:      "13",
+    # host:       "10.20.0.40", #for FTscreen
     host:       "localhost",
     text:       "hello world",
     once:       true,
@@ -25,7 +26,7 @@ class FtSendText
   end
 
   def send
-    "#{BASE_PATH}/send-text -f #{@font_path} -c#{@color} -h #{@host} -s #{@speed} #{@once} #{@text}"
+    "#{BASE_PATH}/send-text -f #{@font_path} -c#{@color} -h #{@host} -l 13 -s #{@speed} -o #{@text}"
   end
 
   def once_option
